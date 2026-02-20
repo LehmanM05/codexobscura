@@ -1,0 +1,4 @@
+baseURL = 'https://codexobscura.com/'
+languageCode = 'en-us'
+title = "Codex Obscura"
+theme = "PaperMod"
