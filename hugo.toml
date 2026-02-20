@@ -1,4 +1,4 @@
-baseURL = 'https://codexobscura.com/'
+baseURL = 'https://lehmanm05.github.io/codexobscura/'
 languageCode = 'en-us'
 title = "Codex Obscura"
 theme = "PaperMod"
