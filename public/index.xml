@@ -2,10 +2,119 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Codex Obscura</title>
-    <link>http://localhost:1313/codexobscura/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Codex Obscura</description>
     <generator>Hugo -- 0.154.5</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/codexobscura/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/z_templates/new-build.md/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/z_templates/new-build.md/</guid>
+      <description>&lt;h2 id=&#34;heading&#34;&gt;&amp;lt;%*&lt;br&gt;
+const title = await tp.system.prompt(&amp;ldquo;Post Title&amp;rdquo;);&lt;br&gt;
+await tp.file.rename(&lt;br&gt;
+tp.date.now(&amp;ldquo;YYYY-MM-DD&amp;rdquo;) + &amp;ldquo;-&amp;rdquo; +&lt;br&gt;
+title.replace(/\s+/g, &amp;ldquo;-&amp;rdquo;).toLowerCase()&lt;br&gt;
+);&lt;br&gt;
+%&amp;gt;&lt;/h2&gt;
+&lt;p&gt;title: &amp;lt;% tp.file.title %&amp;gt;
+date: &amp;lt;% tp.date.now(&amp;ldquo;YYYY-MM-DD&amp;rdquo;) %&amp;gt;
+draft: true
+categories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Build
+tags:&lt;/li&gt;
+&lt;li&gt;Pathfinder2e&lt;/li&gt;
+&lt;li&gt;Pathfinder&lt;/li&gt;
+&lt;li&gt;SecondEdition
+class: &amp;lt;% tp.prompt(&amp;ldquo;Which class is this build for?&amp;rdquo;) %&amp;gt;
+summary: Build for &amp;lt;% tp.frontmatter.class %&amp;gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;-tpfiletitle-&#34;&gt;&amp;lt;% tp.file.title %&amp;gt;&lt;/h1&gt;
+&lt;h2 id=&#34;concept&#34;&gt;Concept&lt;/h2&gt;
+&lt;p&gt;Brief description of the build.&lt;/p&gt;
+&lt;h2 id=&#34;stats&#34;&gt;Stats&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Strength:&lt;/li&gt;
+&lt;li&gt;Dexterity:&lt;/li&gt;
+&lt;li&gt;Constitution:&lt;/li&gt;
+&lt;li&gt;Intelligence:&lt;/li&gt;
+&lt;li&gt;Wisdom:&lt;/li&gt;
+&lt;li&gt;Charisma:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;feats&#34;&gt;Feats&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Class Feats:&lt;/li&gt;
+&lt;li&gt;Skill Feats:&lt;/li&gt;
+&lt;li&gt;Archetypes:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;equipment&#34;&gt;Equipment&lt;/h2&gt;
+&lt;h2 id=&#34;playstyle-notes&#34;&gt;Playstyle Notes&lt;/h2&gt;
+&lt;h2 id=&#34;inspiration&#34;&gt;Inspiration&lt;/h2&gt;
+&lt;p&gt;Pop culture references or character flavor.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/z_templates/new-class-guide.md/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/z_templates/new-class-guide.md/</guid>
+      <description>&lt;h2 id=&#34;heading&#34;&gt;&amp;lt;%*&lt;br&gt;
+const title = await tp.system.prompt(&amp;ldquo;Post Title&amp;rdquo;);&lt;br&gt;
+await tp.file.rename(&lt;br&gt;
+tp.date.now(&amp;ldquo;YYYY-MM-DD&amp;rdquo;) + &amp;ldquo;-&amp;rdquo; +&lt;br&gt;
+title.replace(/\s+/g, &amp;ldquo;-&amp;rdquo;).toLowerCase()&lt;br&gt;
+);&lt;br&gt;
+%&amp;gt;&lt;/h2&gt;
+&lt;p&gt;title: &amp;lt;% tp.file.title %&amp;gt;
+date: &amp;lt;% tp.date.now(&amp;ldquo;YYYY-MM-DD&amp;rdquo;) %&amp;gt;
+draft: true
+categories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Class
+tags:&lt;/li&gt;
+&lt;li&gt;Pathfinder2e&lt;/li&gt;
+&lt;li&gt;Pathfinder&lt;/li&gt;
+&lt;li&gt;SecondEdition
+summary: Guide for the &amp;lt;% tp.file.title %&amp;gt; class.
+class: &amp;lt;% tp.file.title %&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;-tpfiletitle--guide&#34;&gt;&amp;lt;% tp.file.title %&amp;gt; Guide&lt;/h1&gt;
+&lt;h2 id=&#34;class-description&#34;&gt;Class Description&lt;/h2&gt;
+&lt;h2 id=&#34;class-features&#34;&gt;Class Features&lt;/h2&gt;
+&lt;h2 id=&#34;subclasss&#34;&gt;Subclass(s)&lt;/h2&gt;
+&lt;h2 id=&#34;attributes&#34;&gt;Attributes&lt;/h2&gt;
+&lt;h2 id=&#34;ancestries&#34;&gt;Ancestries&lt;/h2&gt;
+&lt;h2 id=&#34;class-feats&#34;&gt;Class Feats&lt;/h2&gt;
+&lt;h2 id=&#34;skill-feats&#34;&gt;Skill Feats&lt;/h2&gt;
+&lt;h2 id=&#34;archetypes&#34;&gt;Archetypes&lt;/h2&gt;
+&lt;h2 id=&#34;equipment&#34;&gt;Equipment&lt;/h2&gt;
+&lt;h2 id=&#34;example-builds&#34;&gt;Example Builds&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/z_templates/new-post.md/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/z_templates/new-post.md/</guid>
+      <description>&lt;h2 id=&#34;heading&#34;&gt;&amp;lt;%*&lt;br&gt;
+const title = await tp.system.prompt(&amp;ldquo;Post Title&amp;rdquo;);&lt;br&gt;
+await tp.file.rename(&lt;br&gt;
+tp.date.now(&amp;ldquo;YYYY-MM-DD&amp;rdquo;) + &amp;ldquo;-&amp;rdquo; +&lt;br&gt;
+title.replace(/\s+/g, &amp;ldquo;-&amp;rdquo;).toLowerCase()&lt;br&gt;
+);&lt;br&gt;
+%&amp;gt;&lt;/h2&gt;
+&lt;p&gt;title: &amp;lt;% tp.file.title %&amp;gt;
+date: &amp;lt;% tp.date.now(&amp;ldquo;YYYY-MM-DD&amp;rdquo;) %&amp;gt;
+draft: true
+categories: [&amp;ldquo;Post&amp;rdquo;]
+summary: &amp;ldquo;Short summary goes here.&amp;rdquo;
+tags:&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;-tpfiletitle-&#34;&gt;&amp;lt;% tp.file.title %&amp;gt;&lt;/h1&gt;
+&lt;p&gt;Write your post here.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

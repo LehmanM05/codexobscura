@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: mbpjb-hnccc
+created: 2026-02-20T17:00:48-05:00

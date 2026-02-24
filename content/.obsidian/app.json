@@ -1,0 +1,13 @@
+{
+  "useMarkdownLinks": true,
+  "userIgnoreFilters": [
+    ".stfolder",
+    ".stignore",
+    ".syncthing/",
+    "*.stfolder",
+    "*.stignore",
+    "*.syncthing/",
+    ".syncthing*",
+    "*.syncthing*"
+  ]
+}
