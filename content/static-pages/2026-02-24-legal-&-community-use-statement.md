@@ -6,7 +6,7 @@ date: 2026-02-24
 draft: false
 categories: ["Post"]
 type: "page"
-tags: "legal", "community"
+tags: "legal"
 
 ---
 
