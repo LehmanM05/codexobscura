@@ -8,9 +8,6 @@ theme = "Stack"
 [params.sidebar]
   compact = true
   subtitle = "Pathfinder 2e Builds & Class Guides"
-  avatar.enabled = true
-  avatar.local = true
-  avatar.src = "img/avatar.png"
   showRecent = true
   recentLimit = 5
 [params.widgets]
