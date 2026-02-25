@@ -4,8 +4,7 @@ title: "About This Site"
 slug: "about"
 date: 2026-02-24
 draft: false
-categories: ["Post"]
-type: "page"
+type: "post"
 tags: "about"
 
 ---

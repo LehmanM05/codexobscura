@@ -4,8 +4,7 @@ title: "Legal & Community Use Statement"
 slug: "legal-community-use-statement"
 date: 2026-02-24
 draft: false
-categories: ["Post"]
-type: "page"
+type: "post"
 tags: "legal"
 
 ---
