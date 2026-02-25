@@ -5,3 +5,49 @@ theme = "Stack"
 [params.footer]
   since = 2026
   customText = "Independent fan project. Not affiliated with Paizo Inc."
+[params.sidebar]
+  compact = true
+  subtitle = "Pathfinder 2e Builds & Class Guides"
+  avatar.enabled = true
+  avatar.local = true
+  avatar.src = "img/avatar.png"
+  showRecent = true
+  recentLimit = 5
+[params.widgets]
+  homepage = [
+    { type = "search" },
+    { type = "archives", params = { limit = 5 } },
+    { type = "categories", params = { limit = 10 } },
+    { type = "tag-cloud", params = { limit = 20 } }
+  ]
+[menu]
+
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "classes"
+    name = "Class Guides"
+    url = "/categories/class/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/static-pages/about/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "legal"
+    name = "Legal"
+    url = "/static-pages/legal-community-use-statement/"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "support"
+    name = "Support"
+    url = "/static-pages/support/"
+    weight = 5
