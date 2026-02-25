@@ -1,0 +1,20 @@
+# Syncthing
+.stfolder
+.stignore
+.stversions/
+.syncthing.*
+.st*
+/content/.st*
+
+# Hugo build output
+public/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Obsidian templates
+z_*
+.obsidian/
+/content/z_*
+/content/.ob*
