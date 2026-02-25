@@ -5,7 +5,6 @@ slug: "legal-community-use-statement"
 date: 2026-02-24
 draft: false
 type: "post"
-tags: "legal"
 
 ---
 

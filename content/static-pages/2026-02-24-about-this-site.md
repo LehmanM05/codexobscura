@@ -5,7 +5,6 @@ slug: "about"
 date: 2026-02-24
 draft: false
 type: "post"
-tags: "about"
 
 ---
 
