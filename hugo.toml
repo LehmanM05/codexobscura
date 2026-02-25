@@ -2,3 +2,6 @@ baseURL = 'https://codexobscura.ddnsgeek.com/'
 languageCode = 'en-us'
 title = "Codex Obscura"
 theme = "Stack"
+[params.footer]
+  since = 2026
+  customText = "Independent fan project. Not affiliated with Paizo Inc."
