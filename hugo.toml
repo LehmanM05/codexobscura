@@ -1,4 +1,4 @@
-baseURL = 'https://codexobscura.ddnsgeek.com/'
+baseURL = 'https://compendium.codexobscura.net/'
 languageCode = 'en-us'
 title = "Codex Obscura"
 theme = "Stack"
