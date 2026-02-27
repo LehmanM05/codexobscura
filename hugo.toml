@@ -30,19 +30,31 @@ theme = "hextra"
     weight = 2
 
   [[menu.main]]
+    identifier = "campaigns"
+    name = "Campaigns"
+    pageRef = "/campaigns"
+    weight = 3
+
+  [[menu.main]]
     identifier = "blog"
     name = "Blog"
-    pageRef = "/posts"
-    weight = 3
+    pageRef = "/blog"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "reviews"
+    name = "Reviews"
+    pageRef = "/reviews"
+    weight = 5
 
   [[menu.main]]
     identifier = "more"
     name = "More"
-    weight = 4
+    weight = 6
 
   [[menu.main]]
     name = "Search"
-    weight = 5
+    weight = 7
     [menu.main.params]
       type = "search"
 
@@ -123,7 +135,7 @@ theme = "hextra"
   [params.banner]
     key = "its-alive"
     message = """
-The Compendium is here! 🎉 Discover [what's new]({{% relref "/posts" %}})
+The Compendium is here! 🎉 Discover [what's new]({{% relref "/blog" %}})
 """
 
   # ---------------- Theme ----------------
