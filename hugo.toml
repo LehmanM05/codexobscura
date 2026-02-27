@@ -1,164 +1,209 @@
-baseURL = 'https://compendium.codexobscura.net/'
-languageCode = 'en-us'
+baseURL = "https://compendium.codexobscura.net/"
+languageCode = "en-us"
 title = "Codex Obscura"
 theme = "hextra"
 
+# --------------------------------------------------
+# Outputs (must be top-level in Hugo)
+# --------------------------------------------------
 
-menu:
-  main:
-    - identifier: guides
-      name: Guides
-      pageRef: /guides
-      weight: 1
-    - identifier: builds
-      name: Builds
-      pageRef: /builds
-      weight: 2
-    - identifier: blog
-      name: Blog
-      pageRef: /blog
-      weight: 3
-    - identifier: more
-      name: More
-      weight: 4
-    - name: Search
-      weight: 5
-      params:
-        type: search
-    - identifier: about
-      name: About
-      pageRef: /about
-      parent: more
-      weight: 1
-    - identifier: legal
-      name: Legal
-      pageRef: /legal
-      parent: more
-      weight: 2
-    - identifier: support
-      name: Support
-      pageRef: /support
-      parent: more
-      weight: 3
+[outputs]
+  page = ["html", "markdown"]
+  section = ["html", "rss", "markdown"]
 
-  sidebar:
-    - identifier: more
-      name: More
-      params:
-        type: separator
-      weight: 1
-    - identifier: about
-      name: "About"
-      pageRef: "/about"
-      weight: 2
-    - identifier: legal
-      name: "Legal"
-      pageRef: "/legal"
-      weight: 3
-    - identifier: support
-      name: "Support"
-      pageRef: "/support"
-      weight: 4
+# --------------------------------------------------
+# Menus
+# --------------------------------------------------
 
-params:
-  description: A compendium of TTRPG guides, builds, and musings.
+[menu]
 
-  externalLinkDecoration: true
+  [[menu.main]]
+    identifier = "guides"
+    name = "Guides"
+    pageRef = "/guides"
+    weight = 1
 
-  banner:
-    key: 'its alive'
-    message: |
-      The Compendium is here! 🎉 Discover [what's new]({{% relref "/blog" %}})
+  [[menu.main]]
+    identifier = "builds"
+    name = "Builds"
+    pageRef = "/builds"
+    weight = 2
 
-  navbar:
-    displayTitle: true
-    displayLogo: true
-    logo:
-      path: images/logo.png
-      # width: 40
-      # height: 20
-      # link: /
-    width: wide
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    pageRef = "/blog"
+    weight = 3
 
-  theme:
-    # light | dark | system
-    default: system
-    displayToggle: true
+  [[menu.main]]
+    identifier = "more"
+    name = "More"
+    weight = 4
 
-  footer:
-    enable: true
-    displayCopyright: true
-    displayPoweredBy: true
-    width: normal
+  [[menu.main]]
+    name = "Search"
+    weight = 5
+    [menu.main.params]
+      type = "search"
 
-  # Display the last modification date
-  displayUpdatedDate: true
-  dateFormat: "January 2, 2006"
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    pageRef = "/about"
+    parent = "more"
+    weight = 1
 
-  # Display the author name of the last modified date
-  displayUpdatedAuthor: false
+  [[menu.main]]
+    identifier = "legal"
+    name = "Legal"
+    pageRef = "/legal"
+    parent = "more"
+    weight = 2
 
-  # Search
-  # flexsearch is enabled by default
-  search:
-    enable: true
-    type: flexsearch
+  [[menu.main]]
+    identifier = "support"
+    name = "Support"
+    pageRef = "/support"
+    parent = "more"
+    weight = 3
 
-    flexsearch:
-      # index page by: content | summary | heading | title
-      index: content
-      # full | forward | reverse | strict
-      # https://github.com/nextapps-de/flexsearch/#tokenizer-prefix-search
-      tokenize: forward
 
-  blog:
-    list:
-      displayTags: true
-      # date | lastmod | publishDate | title | weight
-      sortBy: date
-      sortOrder: desc # or "asc"
-      # Pagination
-      pagerSize: 20
+  [[menu.sidebar]]
+    identifier = "more"
+    name = "More"
+    weight = 1
+    [menu.sidebar.params]
+      type = "separator"
 
-    article:
-      displayPagination: true
+  [[menu.sidebar]]
+    identifier = "about"
+    name = "About"
+    pageRef = "/about"
+    weight = 2
 
-  toc:
-    displayTags: true
+  [[menu.sidebar]]
+    identifier = "legal"
+    name = "Legal"
+    pageRef = "/legal"
+    weight = 3
 
-  highlight:
-    copy:
-      enable: true
-      # hover | always
-      display: hover
-  page:
-    # full (100%), wide (90rem), normal (80rem)
-    width: normal
-    # tabs:
-    #   sync: true
-    contextMenu:
-      enable: true
-  outputs:
-    page: [html, markdown]
-    section: [html, rss, markdown]
+  [[menu.sidebar]]
+    identifier = "support"
+    name = "Support"
+    pageRef = "/support"
+    weight = 4
 
-  imageZoom:
-    enable: true
 
-  comments:
-    enable: true
-    type: giscus
+# --------------------------------------------------
+# Hextra Params
+# --------------------------------------------------
 
-    # https://giscus.app/
-    giscus:
-      repo: LehmanM05/codexobscura
-      repoId: R_kgDORU8Yiw
-      category: General
-      categoryId: DIC_kwDORU8Yi84C3WON
-      mapping: pathname
-      strict: 1
-      reactionsEnabled: 1
-      emitMetadata: 0
-      inputPosition: bottom
-      lang: en
-      # theme: noborder_dark
+[params]
+  description = "A compendium of TTRPG guides, builds, and musings."
+  externalLinkDecoration = true
+  displayUpdatedDate = true
+  displayUpdatedAuthor = false
+  dateFormat = "January 2, 2006"
+
+  # ---------------- Navbar ----------------
+
+  [params.navbar]
+    displayTitle = true
+    displayLogo = true
+    width = "wide"
+
+    [params.navbar.logo]
+      path = "images/logo.png"
+      # width = 40
+      # height = 20
+      # link = "/"
+
+  # ---------------- Banner ----------------
+
+  [params.banner]
+    key = "its-alive"
+    message = """
+The Compendium is here! 🎉 Discover [what's new]({{% relref "/blog" %}})
+"""
+
+  # ---------------- Theme ----------------
+
+  [params.theme]
+    default = "system"   # light | dark | system
+    displayToggle = true
+
+  # ---------------- Footer ----------------
+
+  [params.footer]
+    enable = true
+    displayCopyright = true
+    displayPoweredBy = true
+    width = "normal"
+
+  # ---------------- Search ----------------
+
+  [params.search]
+    enable = true
+    type = "flexsearch"
+
+    [params.search.flexsearch]
+      index = "content"   # content | summary | heading | title
+      tokenize = "forward"
+
+  # ---------------- Blog ----------------
+
+  [params.blog]
+
+    [params.blog.list]
+      displayTags = true
+      sortBy = "date"
+      sortOrder = "desc"
+      pagerSize = 20
+
+    [params.blog.article]
+      displayPagination = true
+
+  # ---------------- TOC ----------------
+
+  [params.toc]
+    displayTags = true
+
+  # ---------------- Code Highlight ----------------
+
+  [params.highlight]
+
+    [params.highlight.copy]
+      enable = true
+      display = "hover"
+
+  # ---------------- Page Layout ----------------
+
+  [params.page]
+    width = "normal"
+
+    [params.page.contextMenu]
+      enable = true
+
+  # ---------------- Image Zoom ----------------
+
+  [params.imageZoom]
+    enable = true
+
+  # ---------------- Comments (Giscus) ----------------
+
+  [params.comments]
+    enable = true
+    type = "giscus"
+
+    [params.comments.giscus]
+      repo = "LehmanM05/codexobscura"
+      repoId = "R_kgDORU8Yiw"
+      category = "General"
+      categoryId = "DIC_kwDORU8Yi84C3WON"
+      mapping = "pathname"
+      strict = 1
+      reactionsEnabled = 1
+      emitMetadata = 0
+      inputPosition = "bottom"
+      lang = "en"
+      # theme = "noborder_dark"
