@@ -1,10 +1,11 @@
 
 ---
-title: Support
-slug: "support-codex-obscura"
+title: Support this Site
+slug: "support"
 date: 2026-02-24
 draft: false
 type: "post"
+comments: false
 
 ---
 

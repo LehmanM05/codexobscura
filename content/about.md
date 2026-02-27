@@ -1,10 +1,11 @@
 
 ---
-title: About
+title: About this Site
 slug: "about"
 date: 2026-02-24
 draft: false
 type: "post"
+comments: false
 
 ---
 

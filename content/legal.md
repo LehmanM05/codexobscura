@@ -1,10 +1,11 @@
 
 ---
-title: Legal
-slug: "legal-community-use-statement"
+title: "Legal & Community Use Statement"
+slug: "legal"
 date: 2026-02-24
 draft: false
 type: "post"
+comments: false
 
 ---
 
