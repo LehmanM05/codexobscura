@@ -2,49 +2,163 @@ baseURL = 'https://compendium.codexobscura.net/'
 languageCode = 'en-us'
 title = "Codex Obscura"
 theme = "hextra"
-[params.footer]
-  since = 2026
-  customText = "Independent fan project. Not affiliated with Paizo Inc."
-[params.sidebar]
-  compact = true
-  subtitle = "Pathfinder 2e Builds & Class Guides"
-  showRecent = true
-  recentLimit = 5
-[params.widgets]
-  homepage = [
-    { type = "search" },
-    { type = "archives", params = { limit = 5 } },
-    { type = "categories", params = { limit = 10 } },
-    { type = "tag-cloud", params = { limit = 20 } }
-  ]
-[menu]
 
-  [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
 
-  [[menu.main]]
-    identifier = "classes"
-    name = "Class Guides"
-    url = "/categories/class/"
-    weight = 2
+menu:
+  main:
+    - identifier: guides
+      name: Guides
+      pageRef: /guides
+      weight: 1
+    - identifier: builds
+      name: Builds
+      pageRef: /builds
+      weight: 2
+    - identifier: blog
+      name: Blog
+      pageRef: /blog
+      weight: 3
+    - identifier: more
+      name: More
+      weight: 4
+    - name: Search
+      weight: 5
+      params:
+        type: search
+    - identifier: about
+      name: About
+      pageRef: /about
+      parent: more
+      weight: 1
+    - identifier: legal
+      name: Legal
+      pageRef: /legal
+      parent: more
+      weight: 2
+    - identifier: support
+      name: Support
+      pageRef: /support
+      parent: more
+      weight: 3
 
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/static-pages/about/"
-    weight = 3
+  sidebar:
+    - identifier: more
+      name: More
+      params:
+        type: separator
+      weight: 1
+    - identifier: about
+      name: "About"
+      pageRef: "/about"
+      weight: 2
+    - identifier: legal
+      name: "Legal"
+      pageRef: "/legal"
+      weight: 3
+    - identifier: support
+      name: "Support"
+      pageRef: "/support"
+      weight: 4
 
-  [[menu.main]]
-    identifier = "legal"
-    name = "Legal"
-    url = "/static-pages/legal-community-use-statement/"
-    weight = 4
+params:
+  description: A compendium of TTRPG guides, builds, and musings.
 
-  [[menu.main]]
-    identifier = "support"
-    name = "Support"
-    url = "/static-pages/support/"
-    weight = 5
+  externalLinkDecoration: true
+
+  banner:
+    key: 'its alive'
+    message: |
+      The Compendium is here! 🎉 Discover [what's new]({{% relref "/blog" %}})
+
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: images/logo.png
+      # width: 40
+      # height: 20
+      # link: /
+    width: wide
+
+  theme:
+    # light | dark | system
+    default: system
+    displayToggle: true
+
+  footer:
+    enable: true
+    displayCopyright: true
+    displayPoweredBy: true
+    width: normal
+
+  # Display the last modification date
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2006"
+
+  # Display the author name of the last modified date
+  displayUpdatedAuthor: false
+
+  # Search
+  # flexsearch is enabled by default
+  search:
+    enable: true
+    type: flexsearch
+
+    flexsearch:
+      # index page by: content | summary | heading | title
+      index: content
+      # full | forward | reverse | strict
+      # https://github.com/nextapps-de/flexsearch/#tokenizer-prefix-search
+      tokenize: forward
+
+  blog:
+    list:
+      displayTags: true
+      # date | lastmod | publishDate | title | weight
+      sortBy: date
+      sortOrder: desc # or "asc"
+      # Pagination
+      pagerSize: 20
+
+    article:
+      displayPagination: true
+
+  toc:
+    displayTags: true
+
+  highlight:
+    copy:
+      enable: true
+      # hover | always
+      display: hover
+  page:
+    # full (100%), wide (90rem), normal (80rem)
+    width: normal
+    # tabs:
+    #   sync: true
+    contextMenu:
+      enable: true
+  outputs:
+    page: [html, markdown]
+    section: [html, rss, markdown]
+
+  imageZoom:
+    enable: true
+
+  comments:
+    enable: true
+    type: giscus
+
+    # https://giscus.app/
+    giscus:
+      repo: LehmanM05/codexobscura
+      repoId: R_kgDORU8Yiw
+      category: General
+      categoryId: DIC_kwDORU8Yi84C3WON
+      mapping: pathname
+      strict: 1
+      reactionsEnabled: 1
+      emitMetadata: 0
+      inputPosition: bottom
+      lang: en
+      # theme: noborder_dark
