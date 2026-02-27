@@ -32,7 +32,7 @@ theme = "hextra"
   [[menu.main]]
     identifier = "blog"
     name = "Blog"
-    pageRef = "/blog"
+    pageRef = "/posts"
     weight = 3
 
   [[menu.main]]
@@ -123,7 +123,7 @@ theme = "hextra"
   [params.banner]
     key = "its-alive"
     message = """
-The Compendium is here! 🎉 Discover [what's new]({{% relref "/blog" %}})
+The Compendium is here! 🎉 Discover [what's new]({{% relref "/posts" %}})
 """
 
   # ---------------- Theme ----------------
