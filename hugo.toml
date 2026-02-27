@@ -1,7 +1,7 @@
 baseURL = 'https://compendium.codexobscura.net/'
 languageCode = 'en-us'
 title = "Codex Obscura"
-theme = "Stack"
+theme = "Poison"
 [params.footer]
   since = 2026
   customText = "Independent fan project. Not affiliated with Paizo Inc."
