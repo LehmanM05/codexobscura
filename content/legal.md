@@ -1,6 +1,6 @@
 
 ---
-title: "Legal & Community Use Statement"
+title: Legal
 slug: "legal-community-use-statement"
 date: 2026-02-24
 draft: false
