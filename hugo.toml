@@ -197,6 +197,12 @@ The Compendium is here! 🎉 Discover [what's new]({{% relref "/blog" %}})
     [params.page.contextMenu]
       enable = true
 
+  # --------------- Goldmark ------------------
+  [markup.goldmark.renderer]
+    unsafe = true
+
+  [markup.highlight]
+    noClasses = false
   # ---------------- Image Zoom ----------------
 
   [params.imageZoom]
