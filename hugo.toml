@@ -2,7 +2,7 @@ baseURL = "https://compendium.codexobscura.net/"
 languageCode = "en-us"
 title = "Codex Obscura"
 theme = "hextra"
-
+ignoreFiles = ['[/\\]z_templates[/\\]', 'z_.*']
 # --------------------------------------------------
 # Outputs (must be top-level in Hugo)
 # --------------------------------------------------
@@ -226,5 +226,3 @@ The Compendium is here! 🎉 Discover [what's new]({{% relref "/blog" %}})
       inputPosition = "bottom"
       lang = "en"
       # theme = "noborder_dark"
-
-ignoreFiles = ['[/\\]z_templates[/\\]', 'z_.*']
