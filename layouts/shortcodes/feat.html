@@ -3,9 +3,13 @@
 {{- $feat := index site.Data.pathfinder.feats $key -}}
 
 {{- if $feat -}}
-<a href="{{ $feat.url }}" target="_blank" rel="noopener">
+<a href="{{ $feat.url }}"
+   target="_blank"
+   rel="noopener noreferrer">
     {{ $feat.name }}
 </a>
 {{- else -}}
-<span class="missing-reference">{{ $name }}</span>
+<span class="missing-reference">
+    {{ $name }}
+</span>
 {{- end -}}

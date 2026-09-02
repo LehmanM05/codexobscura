@@ -10,7 +10,7 @@ description: "A practical guide to the Pathfinder 2e Remastered Rogue, covering 
 summary: "A practical guide to the Pathfinder 2e Remastered Rogue."
 
 class: "Rogue"
-system: "Pathfinder 2e"
+system: "pf2e"
 ruleset: "Remaster"
 
 categories:

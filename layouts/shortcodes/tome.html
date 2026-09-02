@@ -1,0 +1,26 @@
+{{- $rating := int (.Get 0) -}}
+
+{{- if eq $rating 3 -}}
+<div class="tome-rating">
+    <img src="/images/tome3.png" alt="Three Tomes" class="tome-rating-image">
+    <strong>Three Tomes</strong> — Excellent
+</div>
+
+{{- else if eq $rating 2 -}}
+<div class="tome-rating">
+    <img src="/images/tome2.png" alt="Two Tomes" class="tome-rating-image">
+    <strong>Two Tomes</strong> — Strong, with caveats
+</div>
+
+{{- else if eq $rating 1 -}}
+<div class="tome-rating">
+    <img src="/images/tome1.png" alt="One Tome" class="tome-rating-image">
+    <strong>One Tome</strong> — Niche or campaign-dependent
+</div>
+
+{{- else -}}
+<div class="tome-rating">
+    <img src="/images/tome.png" alt="No Tomes" class="tome-rating-image">
+    <strong>No Tomes</strong> — Generally not recommended
+</div>
+{{- end -}}
