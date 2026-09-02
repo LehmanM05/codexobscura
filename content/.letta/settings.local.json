@@ -1,0 +1,13 @@
+{
+  "lastAgent": "agent-local-6163061b-780f-4ad2-ab48-da0ae70fdda4",
+  "sessionsByServer": {
+    "local:/home/reliq/.letta/lc-local-backend": {
+      "agentId": "agent-local-6163061b-780f-4ad2-ab48-da0ae70fdda4",
+      "conversationId": "default"
+    }
+  },
+  "lastSession": {
+    "agentId": "agent-local-6163061b-780f-4ad2-ab48-da0ae70fdda4",
+    "conversationId": "default"
+  }
+}
