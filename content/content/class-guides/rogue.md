@@ -21,7 +21,6 @@ tags:
   - remaster
   - rogue
 
-rating-system: "tomes"
 last-reviewed: 2026-02-27
 ---
 ---
