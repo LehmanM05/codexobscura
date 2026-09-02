@@ -20,7 +20,7 @@ theme = "hextra"
   [[menu.main]]
     identifier = "guides"
     name = "Guides"
-    pageRef = "/guides"
+    pageRef = "/class-guides"
     weight = 1
 
   [[menu.main]]
