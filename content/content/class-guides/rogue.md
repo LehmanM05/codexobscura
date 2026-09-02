@@ -1710,6 +1710,7 @@ When using the [Scout](https://2e.aonprd.com/Actions.aspx?ID=2629) exploration a
 
 ## Example Builds
 ### Avenger
+THis is a test.
 ### Mastermind
 ### Ruffian
 ### Scoundrel
