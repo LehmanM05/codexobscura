@@ -1,0 +1,11 @@
+{{- $name := .Get 0 -}}
+{{- $key := urlize $name -}}
+{{- $feat := index site.Data.pathfinder.feats $key -}}
+
+{{- if $feat -}}
+<a href="{{ $feat.url }}" target="_blank" rel="noopener">
+    {{ $feat.name }}
+</a>
+{{- else -}}
+<span class="missing-reference">{{ $name }}</span>
+{{- end -}}

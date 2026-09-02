@@ -732,7 +732,7 @@ I was once a little teapot short and stout, now I'm sentient hear me shout. Neve
 #### Three Tomes
 {{< rating 3 >}}
 
-**Nimble Dodge**
+**{{< feat "Nimble Dodge" >}}**
 A great reaction to gain +2 AC that triggers when you know you're being attacked
 
 **Trap Finder**
