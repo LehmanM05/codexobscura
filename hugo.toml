@@ -226,3 +226,5 @@ The Compendium is here! 🎉 Discover [what's new]({{% relref "/blog" %}})
       inputPosition = "bottom"
       lang = "en"
       # theme = "noborder_dark"
+
+ignoreFiles = ['[/\\]z_templates[/\\]', 'z_.*']
